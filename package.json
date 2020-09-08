@@ -1,0 +1,15 @@
+{
+  "name": "nama-gadungan",
+  "version": "1.0.0",
+  "description": "Pustaka kecil yang dapat membantu kamu mendapatkan nama acak",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "faker",
+    "seeder"
+  ],
+  "author": "Riza Fahmi",
+  "license": "MIT"
+}
