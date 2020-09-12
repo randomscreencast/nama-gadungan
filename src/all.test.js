@@ -7,7 +7,7 @@ test("it works!", function () {
   expect(actual).toBe(true);
 });
 
-test("Jumlah karakter nama lebih dari dua", function () {
+test("test more than two character names", function () {
   const actual = all().every(function (currentValue) {
     return currentValue.length > 2;
   });
