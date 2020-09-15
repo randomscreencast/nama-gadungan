@@ -1,6 +1,7 @@
 const names = require("./data/names.json");
 
-function getNameByfirstLetter(firstLetter) {
+function getNamesByFirstLetter(firstLetter) {
+  if (!firstLetter) return [];
   if (firstLetter.length !== 1) return [];
 
   const filteredNameByFirstLetter = names.filter(
@@ -9,4 +10,4 @@ function getNameByfirstLetter(firstLetter) {
   return filteredNameByFirstLetter;
 }
 
-module.exports = getNameByfirstLetter;
+module.exports = getNamesByFirstLetter;
