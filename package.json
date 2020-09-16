@@ -8,7 +8,9 @@
     "lint:fix": "eslint src/*.js --fix",
     "format": "prettier src/*.js --write",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files"
   },
   "keywords": [
     "faker",
@@ -17,12 +19,16 @@
   "author": "Riza Fahmi",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
     "eslint": "^7.8.1",
     "eslint-plugin-jest": "^24.0.1",
     "husky": "^4.3.0",
     "jest-cli": "^26.4.2",
     "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2"
   },
   "jest": {
     "testEnvironment": "node",
@@ -33,7 +39,15 @@
         "lines": 100,
         "statements": 100
       }
-    }
+    },
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
   },
   "husky": {
     "hooks": {
