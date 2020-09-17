@@ -1,6 +1,6 @@
 const all = require("./all.js");
 
-test("it works!", function () {
+test("make sure all items in array is string", function () {
   const actual = all().every(function (currentValue) {
     return typeof currentValue === "string";
   });
