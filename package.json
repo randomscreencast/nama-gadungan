@@ -10,7 +10,7 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files"
   },
   "keywords": [
     "faker",
@@ -27,7 +27,8 @@
     "husky": "^4.3.0",
     "jest-cli": "^26.4.2",
     "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2"
   },
   "jest": {
     "testEnvironment": "node",
@@ -38,7 +39,15 @@
         "lines": 100,
         "statements": 100
       }
-    }
+    },
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
   },
   "husky": {
     "hooks": {

@@ -1,13 +1,12 @@
 {
-	"presets": [
-    [
-      "@babel/preset-env", {
-        "targets": {
-          "node": "4"
-        }
+  "presets": [[
+    "@babel/preset-env",
+    {
+      "targets": {
+        "node": "4"
       }
-    ]
-  ],
+    }
+  ]],
   "exclude": [
     "*.test.js"
   ]
