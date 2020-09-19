@@ -1,4 +1,4 @@
-const all = require("./all.js");
-const random = require("./random.js");
+import all from "./all.js";
+import random from "./random.js";
 
-module.exports = {all, random};
+export {all, random};
