@@ -1,9 +1,9 @@
 const all = require("./all.js");
 const random = require("./random.js");
-const allFirstName = require("./allFirstName.js");
+const allAddress = require("./allAddress.js");
 
 module.exports = {
   all,
-  allFirstName,
+  allAddress,
   random
 };
