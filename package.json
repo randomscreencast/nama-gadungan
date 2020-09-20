@@ -2,7 +2,7 @@
   "name": "nama-gadungan",
   "version": "1.0.0",
   "description": "Pustaka kecil yang dapat membantu kamu mendapatkan nama acak",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint src/*.js",
     "lint:fix": "eslint src/*.js --fix",
@@ -22,13 +22,17 @@
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "eslint": "^7.8.1",
     "eslint-plugin-jest": "^24.0.1",
     "husky": "^4.3.0",
     "jest-cli": "^26.4.2",
     "lint-staged": "^10.3.0",
     "prettier": "^2.1.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "rollup": "^2.27.1"
   },
   "jest": {
     "testEnvironment": "node",
@@ -60,5 +64,8 @@
       "npm run format",
       "git add"
     ]
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
