@@ -19,3 +19,4 @@ jobs:
           npm run report-cov
         env:
           CI: true
+          CODECOV_TOKEN: 7c2a8c6d-1433-4380-8818-f81e03e39ff1
