@@ -51,6 +51,12 @@ console.log(name);
 
 ## Cara Berkontribusi
 
+* Fork repositori ini
+* Clone repositori
+* Lakukan perubahan atau perbaikan
+* Buat test case
+* Push dan buat Pull Request
+
 ## TODO
 - [x] Ganti license di package.json
 - [ ] Lengkapi README
