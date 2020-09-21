@@ -1,6 +1,6 @@
 {
   "name": "nama-gadungan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pustaka kecil yang dapat membantu kamu mendapatkan nama acak",
   "main": "dist/index.js",
   "scripts": {
