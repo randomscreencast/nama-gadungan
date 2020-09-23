@@ -3,9 +3,8 @@
 
 # nama-gadungan
 
-Pustaka kecil yang dapat membantu kamu untuk mendapatkan nama acak untuk data gadungan atau data _dummy_ yang dapat digunakan untuk aplikasi dan database. Pustaka ini bertujuan untuk eksperimen bagi yang ingin belajar berkontribusi ke proyek opensource. Lihat proses pembuatannya di youtube.
+Pustaka kecil yang dapat membantu kamu untuk mendapatkan nama acak untuk data gadungan atau data _dummy_ yang dapat digunakan untuk aplikasi dan database. Pustaka ini bertujuan untuk eksperimen bagi yang ingin belajar berkontribusi ke proyek opensource. Lihat proses pembuatannya di [youtube](https://www.youtube.com/playlist?list=PLTY2nW4jwtG_5wjvX1hFqgRe_QbcLVsWS).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTY2nW4jwtG_5wjvX1hFqgRe_QbcLVsWS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Instalasi
 
