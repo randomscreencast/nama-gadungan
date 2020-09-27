@@ -1,6 +1,9 @@
-const all = require("./all.js");
-const random = require("./random.js");
-const allAddress = require("./allAddress");
-const randomAddress = require("./randomAddress");
 
-module.exports = {all, random, allAddress, randomAddress};
+import all from "./all.js";
+import random from "./random.js";
+import getKodepos from "./kodepos.js";
+import allAddress from "./allAddress"
+import randomAddress from "./randomAddress"
+
+export {all, random, getKodepos,allAddress, randomAddress};
+
