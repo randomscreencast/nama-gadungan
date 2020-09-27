@@ -1,0 +1,25 @@
+{
+  "streetName": [
+    "Pejuangan",
+    "Gatot Subroto",
+    "Manggis Asem",
+    "Tengku Umar",
+    "Bajak Sawah",
+    "Super Hero"
+  ],
+  "allayName": [
+    "Mangga",
+    "Harmonika",
+    "Leci",
+    "Pangkal",
+    "Apel",
+    "Buah"
+  ],
+  "cityName": [
+    "Bandung", 
+    "Jakarta", 
+    "Bogor",
+    "Medan",
+    "Tanggerang"
+  ]
+}
