@@ -7,5 +7,5 @@ test("check if random address exists in function allAddress", function () {
   const addressExist = addresses.filter(function (item) {
     return item === address;
   });
-  expect(addressExist.length).toEqual(1);
+  expect(addressExist.length).not.toBe(0);
 });
