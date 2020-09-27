@@ -1,0 +1,22 @@
+name: JavaScript CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: npm install, test
+        run: |
+          npm install
+          npm test
+          npm run report-cov
+        env:
+          CI: true
+          CODECOV_TOKEN: 7c2a8c6d-1433-4380-8818-f81e03e39ff1

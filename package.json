@@ -1,8 +1,8 @@
 {
   "name": "nama-gadungan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pustaka kecil yang dapat membantu kamu mendapatkan nama acak",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint src/*.js",
     "lint:fix": "eslint src/*.js --fix",
@@ -10,7 +10,10 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files"
+    "build:node": "babel src --out-dir dist --ignore src/**/*.test.js --copy-files",
+    "build:browser": "rollup -c",
+    "build": "npm run build:node && npm run build:browser",
+    "report-cov": "cat ./coverage/lcov.info | codecov"
   },
   "keywords": [
     "faker",
@@ -22,13 +25,18 @@
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "codecov": "^3.7.2",
     "eslint": "^7.8.1",
     "eslint-plugin-jest": "^24.0.1",
     "husky": "^4.3.0",
     "jest-cli": "^26.4.2",
     "lint-staged": "^10.3.0",
     "prettier": "^2.1.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "rollup": "^2.27.1"
   },
   "jest": {
     "testEnvironment": "node",
@@ -58,8 +66,11 @@
     "*.js": [
       "npm run lint:fix",
       "npm run format",
-      "npm run test",
+      "npm test",
       "git add"
     ]
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
